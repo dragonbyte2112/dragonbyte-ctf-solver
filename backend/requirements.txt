@@ -1,0 +1,13 @@
+fastapi==0.142.2
+uvicorn[standard]==0.34.0
+httpx==0.28.1
+python-multipart==0.0.20
+pydantic==2.10.3
+pytest==9.1.1
+pytest-asyncio==1.4.0
+
+# Real solver dependencies
+sympy>=1.13          # RSA factoring attacks (crypto_solver)
+scapy>=2.6            # real PCAP packet parsing (forensics_solver)
+pyelftools>=0.31       # real ELF checksec implementation (reverse_solver)
+Pillow>=11.0           # LSB steganography extraction (stego_solver)
